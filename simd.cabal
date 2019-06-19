@@ -44,10 +44,10 @@ library
   -- other-extensions:    
 
     build-depends:       
-        base        >=4.7 && <4.8, 
-        ghc-prim    >=0.3 && <0.4,
-        primitive   >=0.5 && <0.6,
-        vector      >=0.10.9
+        base        , 
+        ghc-prim    ,
+        primitive   ,
+        vector      
 
     ghc-options:        
         -fllvm
