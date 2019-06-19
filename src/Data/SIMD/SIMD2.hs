@@ -245,7 +245,7 @@ instance M.MVector VUM.MVector ty where {                                   \
 ; {-# INLINE basicUnsafeRead #-}                                        \
 ; {-# INLINE basicUnsafeWrite #-}                                       \
 ; {-# INLINE basicClear #-}                                             \
-; {-# INLINE basicSet #-}                                               \
+; {- {-# INLINE basicSet #-}       -}                                              \
 ; {-# INLINE basicUnsafeCopy #-}                                        \
 ; {-# INLINE basicUnsafeGrow #-}                                        \
 ; basicLength (con v) = M.basicLength v                                 \
