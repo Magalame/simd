@@ -281,7 +281,7 @@ instance M.MVector VUM.MVector ty where {                                   \
 ; {-# INLINE basicUnsafeSlice #-}                                       \
 ; {-# INLINE basicOverlaps #-}                                          \
 ; {-# INLINE basicUnsafeNew #-}                                         \
-; {-# INLINE basicUnsafeReplicate #-}                                   \
+; {- {-# INLINE basicUnsafeReplicate #-} -}                                  \
 ; {-# INLINE basicUnsafeRead #-}                                        \
 ; {-# INLINE basicUnsafeWrite #-}                                       \
 ; {-# INLINE basicClear #-}                                             \

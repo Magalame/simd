@@ -81,22 +81,22 @@ main = do
         [ bgroup "VU"
             [ bgroup "Float"
                 [ bench "diff1"                 $ nf (distance_diff1                vuf1) vuf2
-                , bench "diff4"                 $ nf (distance_diff4                vuf1) vuf2
-                , bench "simd4"                 $ nf (distance_unbox_simd4          vuf1) vuf2
-                , bench "simd8"                 $ nf (distance_unbox_simd8          vuf1) vuf2
-                -- , bench "simd16"                $ nf (distance_unbox_simd16         vuf1) vuf2 -- core dumps
-                , bench "hof"                   $ nf (distance_hof                  vuf1) vuf2
-                , bench "hof_simd4"             $ nf (distance_unbox_hof_simd4      vuf1) vuf2
-                , bench "hof_simd8"             $ nf (distance_unbox_hof_simd8      vuf1) vuf2
+                -- , bench "diff4"                 $ nf (distance_diff4                vuf1) vuf2
+                -- , bench "simd4"                 $ nf (distance_unbox_simd4          vuf1) vuf2
+                -- , bench "simd8"                 $ nf (distance_unbox_simd8          vuf1) vuf2
+                -- -- , bench "simd16"                $ nf (distance_unbox_simd16         vuf1) vuf2 -- core dumps
+                -- , bench "hof"                   $ nf (distance_hof                  vuf1) vuf2
+                -- , bench "hof_simd4"             $ nf (distance_unbox_hof_simd4      vuf1) vuf2
+                -- , bench "hof_simd8"             $ nf (distance_unbox_hof_simd8      vuf1) vuf2
                 -- , bench "hof_simd16"            $ nf (distance_unbox_hof_simd16     vuf1) vuf2 -- core dumps
                 ]
             , bgroup "Double"
                 [ bench "diff1"                 $ nf (distance_diff1                vud1) vud2
-                , bench "diff4"                 $ nf (distance_diff4                vud1) vud2
-                , bench "simd4"                 $ nf (distance_unbox_simd4          vud1) vud2
-                -- , bench "simd8"                 $ nf (distance_unbox_simd8          vud1) vud2 -- core dumps
-                , bench "hof"                   $ nf (distance_hof                  vud1) vud2
-                , bench "hof_simd4"             $ nf (distance_unbox_hof_simd4      vud1) vud2
+                -- , bench "diff4"                 $ nf (distance_diff4                vud1) vud2
+                -- , bench "simd4"                 $ nf (distance_unbox_simd4          vud1) vud2
+                -- -- , bench "simd8"                 $ nf (distance_unbox_simd8          vud1) vud2 -- core dumps
+                -- , bench "hof"                   $ nf (distance_hof                  vud1) vud2
+                -- , bench "hof_simd4"             $ nf (distance_unbox_hof_simd4      vud1) vud2
                 , bench "norm"                  $ nf (norm                              ) vud2
                 , bench "norm_simd4"            $ nf (norm_simd4                        ) vud2
                 -- , bench "hof_simd8"             $ nf (distance_unbox_hof_simd8      vud1) vud2 -- core dumps
