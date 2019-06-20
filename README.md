@@ -1,6 +1,13 @@
 simd
 ====
 
+**To run the benches**:
+```
+stack build
+stack exec benches
+```
+
+
 This library provides a simple interface to the SIMD primops provided in GHC 7.8.
 SIMD (Single Instruction Multiple Data) CPU instructions provide an easy way to parallelize numeric computations. 
 GHC 7.8 provides primops that let us access these CPU instructions. 
