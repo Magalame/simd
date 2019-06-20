@@ -33,6 +33,25 @@ build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
+executable benches
+  main-is: criterion-distance.hs
+  other-modules:
+      Paths_simd
+  hs-source-dirs:
+      examples
+  ghc-options: -Wall -O2 
+  build-depends:
+      base
+    , criterion
+    , deepseq
+    , simd
+    , vector
+    , MonadRandom
+    , ghc-prim
+    , primitive
+  default-language: Haskell2010
+
+
 library
     exposed-modules:     
         Data.SIMD

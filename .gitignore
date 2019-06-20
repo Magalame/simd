@@ -10,3 +10,8 @@ cabal-dev
 cabal.sandbox.config
 cabal.config
 *.stack-work*
+*.html
+*.csv
+*.c
+*.cpp
+*.out
